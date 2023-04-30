@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "author": "Rafael Scotti Zanella",
-  "scripts": {},
+  "scripts": {
+    "spotify-nextjs-tailwind:dev": "nx dev spotify-nextjs-tailwind"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
