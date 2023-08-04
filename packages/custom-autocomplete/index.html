@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="c-autocomplete" id="c-autocomplete">
+    <label for="c-autocomplete__input">Escolha uma opção</label>
+    <div class="c-autocomplete__container-input">
+      <input
+        type="text"
+        id="c-autocomplete__input"
+        class="c-autocomplete__input"
+        aria-autocomplete="list"
+        aria-controls="c-autocomplete__list"
+        role="combobox"
+        aria-label="Escolha uma opção"
+        aria-activedescendant=""
+      />
+      <img class="c-autocomplete__input__icon" src="./assets/icons/arrow_down.svg" />
+    </div>
+    <ul class="c-autocomplete__list" id="c-autocomplete__list" role="listbox" aria-expanded="false">
+      <!-- List of filtered items will be added here dynamically -->
+    </ul>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

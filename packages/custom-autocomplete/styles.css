@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Component container */
+.c-autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+/* Component label */
+.c-autocomplete label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input container */
+.c-autocomplete__container-input {
+  position: relative;
+  display: flex;
+  border: 2px solid #c4c4c4;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+/* Change container outlin when focusing on the input */
+.c-autocomplete__container-input:has(.c-autocomplete__input:focus) {
+  outline: 2px solid green;
+}
+
+/* Input style */
+.c-autocomplete__input {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  width: 250px;
+  flex-grow: 1;
+  outline: none;
+}
+
+/* Arrow icon style */
+.c-autocomplete__input__icon {
+  width: 25px;
+  cursor: pointer;
+}
+
+/* List of itens */
+.c-autocomplete__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  max-height: 200px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.c-autocomplete__list--active {
+  display: block;
+}
+
+/* List item */
+.c-autocomplete__list li {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+/* List item hover/selected styles */
+.c-autocomplete__list li:hover,
+.c-autocomplete__list li[aria-selected="true"] {
+  background-color: #f2f2f2;
+}
