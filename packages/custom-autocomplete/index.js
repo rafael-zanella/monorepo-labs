@@ -7,6 +7,7 @@ let currentFocus = -1;
 
 // example of data that can be filtered
 const dados = ["A", "B", "C"];
+const dados2 = ["Maçã", "Laranja", "Banana", "Abacate", "Abacaxi"];
 
 
 const addOptionsToDropdownList = () => {
